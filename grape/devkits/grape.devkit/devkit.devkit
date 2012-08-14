@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="grape.devkit" uuid="6f3b066a-099d-4e63-91fa-1886d8e166ce" />
+<dev-kit name="grape.devkit" uuid="6f3b066a-099d-4e63-91fa-1886d8e166ce">
+  <exported-language name="0af1f34c-8040-4212-b292-5d0f6683079f(grape)" />
+  <exported-language name="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
+  <exported-language name="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" />
+  <extendedDevKits>
+    <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
 

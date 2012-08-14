@@ -6,6 +6,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="${project}/devkits/grape.devkit/devkit.devkit" folder="" />
       <modulePath path="${project}/languages/grape/grape.mpl" />
       <modulePath path="${project}/solutions/grape.sandbox/grape.sandbox.msd" />
     </projectModules>
