@@ -53,9 +53,11 @@
         </node>
         <node role="condition" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="7154405435091281019">
           <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="7154405435091281029">
-            <node role="right" roleId="mj1l.8860443239512128065" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="7154405435091281032">
-              <property name="devName" nameId="azm4.7154405435091252569" value="sens" />
-              <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6657626076223133253" resolveInfo="sens" />
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="7154405435091309277">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="7154405435091309278">
+                <property name="devName" nameId="azm4.7154405435091252569" value="sens" />
+                <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6657626076223133253" resolveInfo="sens" />
+              </node>
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="7154405435091281021">
               <property name="devName" nameId="azm4.7154405435091252569" value="act" />
