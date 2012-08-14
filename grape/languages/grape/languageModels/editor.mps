@@ -335,6 +335,9 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="622052415736893218">
         <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="622052415736893223">
           <property name="text" nameId="tpc2.1073389577007" value="Building" />
+          <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.ForegroundColorStyleClassItem" typeId="tpc2.1186404549998" id="7154405435091378650">
+            <property name="color" nameId="tpc2.1186403713874" value="green" />
+          </node>
         </node>
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SelectableStyleSheetItem" typeId="tpc2.1186414928363" id="622052415736893219">
           <property name="flag" nameId="tpc2.1186414551515" value="false" />
