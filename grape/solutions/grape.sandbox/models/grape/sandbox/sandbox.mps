@@ -14,32 +14,9 @@
   <root id="622052415736902862">
     <node role="rooms" roleId="azm4.7405209520398027059" type="azm4.Room" typeId="azm4.7405209520398027057" id="622052415736902863">
       <property name="name" nameId="tpck.1169194664001" value="Room1" />
-      <node role="sensors" roleId="azm4.622052415736893205" type="azm4.NumericalSensor" typeId="azm4.622052415736893050" id="7154405435091251880">
-        <property name="name" nameId="tpck.1169194664001" value="sensNum" />
-        <property name="minValue" nameId="azm4.622052415736891758" value="1" />
-        <property name="maxValue" nameId="azm4.622052415736891759" value="10" />
-        <property name="id" nameId="azm4.7405209520398059588" value="123123" />
-        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUCustom" typeId="azm4.622052415736879890" id="7154405435091251882">
-          <property name="name" nameId="tpck.1169194664001" value="DeutschMark" />
-        </node>
-      </node>
-      <node role="sensors" roleId="azm4.622052415736893205" type="azm4.BooleanSensor" typeId="azm4.622052415736893045" id="6657626076223133253">
-        <property name="name" nameId="tpck.1169194664001" value="sens" />
-        <property name="id" nameId="azm4.7405209520398059588" value="123123" />
-      </node>
-      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.BooleanActuator" typeId="azm4.622052415736893114" id="6657626076223133254">
-        <property name="name" nameId="tpck.1169194664001" value="act" />
-        <property name="id" nameId="azm4.7405209520398059588" value="asad" />
-      </node>
-      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.NumericalActuator" typeId="azm4.622052415736893133" id="7154405435091236881">
-        <property name="name" nameId="tpck.1169194664001" value="actNum" />
-        <property name="minValue" nameId="azm4.622052415736891758" value="0" />
-        <property name="maxValue" nameId="azm4.622052415736891759" value="15" />
-        <property name="id" nameId="azm4.7405209520398059588" value="213123" />
-        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUProcent" typeId="azm4.622052415736869233" id="7154405435091237689" />
-      </node>
       <node role="rules" roleId="azm4.622052415736918573" type="azm4.Rule" typeId="azm4.622052415736918524" id="7154405435091281015">
         <property name="name" nameId="tpck.1169194664001" value="Hello" />
+        <property name="description" nameId="azm4.1731331358108186318" value="hello" />
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="7154405435091306626">
           <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="7154405435091236881" resolveInfo="actNum" />
           <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7154405435091306635">
@@ -67,8 +44,32 @@
         </node>
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="7154405435091281017">
           <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="6657626076223133254" resolveInfo="act" />
-          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7154405435091306622" />
+          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="1731331358108096731" />
         </node>
+      </node>
+      <node role="sensors" roleId="azm4.622052415736893205" type="azm4.NumericalSensor" typeId="azm4.622052415736893050" id="7154405435091251880">
+        <property name="name" nameId="tpck.1169194664001" value="sensNum" />
+        <property name="minValue" nameId="azm4.622052415736891758" value="1" />
+        <property name="maxValue" nameId="azm4.622052415736891759" value="10" />
+        <property name="id" nameId="azm4.7405209520398059588" value="123123" />
+        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUCustom" typeId="azm4.622052415736879890" id="7154405435091251882">
+          <property name="name" nameId="tpck.1169194664001" value="DeutschMark" />
+        </node>
+      </node>
+      <node role="sensors" roleId="azm4.622052415736893205" type="azm4.BooleanSensor" typeId="azm4.622052415736893045" id="6657626076223133253">
+        <property name="name" nameId="tpck.1169194664001" value="sens" />
+        <property name="id" nameId="azm4.7405209520398059588" value="123123" />
+      </node>
+      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.BooleanActuator" typeId="azm4.622052415736893114" id="6657626076223133254">
+        <property name="name" nameId="tpck.1169194664001" value="act" />
+        <property name="id" nameId="azm4.7405209520398059588" value="asad" />
+      </node>
+      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.NumericalActuator" typeId="azm4.622052415736893133" id="7154405435091236881">
+        <property name="name" nameId="tpck.1169194664001" value="actNum" />
+        <property name="minValue" nameId="azm4.622052415736891758" value="0" />
+        <property name="maxValue" nameId="azm4.622052415736891759" value="15" />
+        <property name="id" nameId="azm4.7405209520398059588" value="213123" />
+        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUProcent" typeId="azm4.622052415736869233" id="7154405435091237689" />
       </node>
     </node>
   </root>
