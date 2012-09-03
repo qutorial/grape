@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:f9851e95-1bba-43e1-ad89-b47869be721c(com.mbeddr.analyses.universalSMT.sandbox.testmodel)">
+<model modelUID="r:caec3234-48b3-4c67-80df-c2aef321a702(com.mbeddr.analyses.universalSMT.sandbox.cvc3gentest)">
   <persistence version="7" />
   <language namespace="dec5efb1-335c-42a3-860a-a14647a8ada5(com.mbeddr.analyses.universalSMT)" />
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <language-engaged-on-generation namespace="2d0cedd6-8ec0-491c-b03c-cc336fcfe035(com.mbeddr.analyses.universalSMT2CVC3)" />
   <devkit namespace="4236efaf-b27f-4ea5-b3db-b83c270c9ca2(com.mbeddr.analyses.smtlangs)" />
+  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" implicit="yes" />
   <import index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="11" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <roots>
-    <node type="tul.USMTInputModule" typeId="tul.914397867000654325" id="6229588243655180498">
-      <property name="name" nameId="tpck.1169194664001" value="UniSMT_Test" />
+    <node type="tul.USMTInputModule" typeId="tul.914397867000654325" id="51331732531814670">
+      <property name="name" nameId="tpck.1169194664001" value="ModelGeneratesToCVC3" />
     </node>
   </roots>
-  <root id="6229588243655180498">
+  <root id="51331732531814670">
+    <node role="tasks" roleId="tul.914397867000654686" type="tul.USMTTaskBase" typeId="tul.914397867000654684" id="51331732531814674">
+      <node role="assumptions" roleId="tul.914397867000654702" type="tul.USMTAssumption" typeId="tul.914397867000654689" id="51331732531814675">
+        <node role="expression" roleId="tul.914397867000654691" type="mj1l.Expression" typeId="mj1l.8860443239512128050" id="51331732531814676" />
+      </node>
+    </node>
     <node role="tasks" roleId="tul.914397867000654686" type="tul.USMTUnsatisfiabilityTask" typeId="tul.914397867000656082" id="6229588243655180502">
       <node role="constDeclarations" roleId="tul.5640593344256535695" type="tul.USMTConstantDeclaration" typeId="tul.5640593344256323471" id="6229588243655245880">
         <property name="name" nameId="tpck.1169194664001" value="ComfortT" />

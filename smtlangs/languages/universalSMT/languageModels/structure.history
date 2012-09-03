@@ -66,5 +66,11 @@
     </dependencies>
     <rename id="tul.6229588243655180509" type="CONCEPT" from="USMTIntegerType" to="USMTRealType" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="10" />
+    </dependencies>
+    <rename id="tul.914397867000654701" type="CHILD" from="declarations" to="varDeclarations" />
+  </StructureModification>
 </history>
 

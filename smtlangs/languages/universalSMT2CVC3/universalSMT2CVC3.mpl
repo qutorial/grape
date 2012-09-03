@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.analyses.universalSMT2CVC3" uuid="2d0cedd6-8ec0-491c-b03c-cc336fcfe035" doNotGenerateAdapters="false">
+<language namespace="com.mbeddr.analyses.universalSMT2CVC3" uuid="2d0cedd6-8ec0-491c-b03c-cc336fcfe035" doNotGenerateAdapters="true">
   <models>
-    <modelRoot path="${org.fortiss.smtlangs}/languages/universalSMT2CVC3/languageModels" />
+    <modelRoot path="${language_descriptor}/languageModels" />
   </models>
   <accessoryModels />
   <generators>
