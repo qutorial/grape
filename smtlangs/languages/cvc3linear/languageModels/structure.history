@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="tii6" modelUID="r:5448c453-e8c4-4228-a674-7a012ec55794(com.mbeddr.analyses.cvc3linear.structure)" version="-1" />
+    </dependencies>
+    <rename id="tii6.5160565088395944708" type="CONCEPT" from="CVC4Line" to="CVC3Line" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tii6" modelUID="r:5448c453-e8c4-4228-a674-7a012ec55794(com.mbeddr.analyses.cvc3linear.structure)" version="0" />
+    </dependencies>
+    <rename id="tii6.914397867000654324" type="CONCEPT" from="VariableDeclaration" to="CVC3VariableDeclaration" />
+  </StructureModification>
+</history>
+
