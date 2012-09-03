@@ -15,61 +15,90 @@
     <node role="rooms" roleId="azm4.7405209520398027059" type="azm4.Room" typeId="azm4.7405209520398027057" id="622052415736902863">
       <property name="name" nameId="tpck.1169194664001" value="Room1" />
       <node role="rules" roleId="azm4.622052415736918573" type="azm4.Rule" typeId="azm4.622052415736918524" id="7154405435091281015">
-        <property name="name" nameId="tpck.1169194664001" value="Hello" />
-        <property name="description" nameId="azm4.1731331358108186318" value="hello" />
-        <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="7154405435091306626">
-          <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="7154405435091236881" resolveInfo="actNum" />
-          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="7154405435091306635">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7154405435091306638">
-              <property name="value" nameId="mj1l.8860443239512128104" value="6" />
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="7154405435091306628">
-              <property name="value" nameId="mj1l.8860443239512128104" value="5" />
-            </node>
-          </node>
-        </node>
-        <node role="condition" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="7154405435091281019">
-          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="7154405435091281029">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="7154405435091309277">
-              <node role="expression" roleId="mj1l.7254843406768839760" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="7154405435091309278">
-                <property name="devName" nameId="azm4.7154405435091252569" value="sens" />
-                <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6657626076223133253" resolveInfo="sens" />
+        <property name="name" nameId="tpck.1169194664001" value="LightOn" />
+        <property name="description" nameId="azm4.1731331358108186318" value="Switches the light on if dark and someone is there" />
+        <node role="condition" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="1460280003000938469">
+          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="1460280003000938502">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.ParensExpression" typeId="mj1l.5763383285156533447" id="1460280003000938511">
+              <node role="expression" roleId="mj1l.7254843406768839760" type="mj1l.OrExpression" typeId="mj1l.8399455261460717642" id="1460280003000938518">
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="1460280003000938521">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="1460280003000938523">
+                    <property name="devName" nameId="azm4.7154405435091252569" value="LightRight" />
+                    <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="1460280003000938466" resolveInfo="LightRight" />
+                  </node>
+                </node>
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="1460280003000938513">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="1460280003000938515">
+                    <property name="devName" nameId="azm4.7154405435091252569" value="LightLeft" />
+                    <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="1460280003000938468" resolveInfo="LightLeft" />
+                  </node>
+                </node>
               </node>
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="7154405435091281021">
-              <property name="devName" nameId="azm4.7154405435091252569" value="act" />
-              <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6657626076223133254" resolveInfo="act" />
+            <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="1460280003000938490">
+              <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="1460280003000938480">
+                <node role="left" roleId="mj1l.8860443239512128064" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="1460280003000938474">
+                  <node role="left" roleId="mj1l.8860443239512128064" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="1460280003000938471">
+                    <property name="devName" nameId="azm4.7154405435091252569" value="Brightness" />
+                    <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="1460280003000938456" resolveInfo="Brightness" />
+                  </node>
+                  <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1460280003000938477">
+                    <property name="value" nameId="mj1l.8860443239512128104" value="7000" />
+                  </node>
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="1460280003000938507">
+                  <node role="expression" roleId="mj1l.7254843406768839760" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="1460280003000938483">
+                    <property name="devName" nameId="azm4.7154405435091252569" value="Occupancy" />
+                    <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6657626076223133253" resolveInfo="Occupancy" />
+                  </node>
+                </node>
+              </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1460280003000938496">
+                <node role="left" roleId="mj1l.8860443239512128064" type="azm4.DeviceReference" typeId="azm4.622052415736918537" id="1460280003000938493">
+                  <property name="devName" nameId="azm4.7154405435091252569" value="Blinds" />
+                  <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="1460280003000938459" resolveInfo="Blinds" />
+                </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="1460280003000938499">
+                  <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
-        <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="7154405435091281017">
-          <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="6657626076223133254" resolveInfo="act" />
-          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="1731331358108096731" />
+        <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="1460280003000938524">
+          <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="1460280003000938468" resolveInfo="LightLeft" />
+          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="1460280003000938526" />
+        </node>
+        <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="1460280003000938527">
+          <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="1460280003000938466" resolveInfo="LightRight" />
+          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="1460280003000938529" />
         </node>
       </node>
-      <node role="sensors" roleId="azm4.622052415736893205" type="azm4.NumericalSensor" typeId="azm4.622052415736893050" id="7154405435091251880">
-        <property name="name" nameId="tpck.1169194664001" value="sensNum" />
-        <property name="minValue" nameId="azm4.622052415736891758" value="1" />
-        <property name="maxValue" nameId="azm4.622052415736891759" value="10" />
-        <property name="id" nameId="azm4.7405209520398059588" value="123123" />
-        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUCustom" typeId="azm4.622052415736879890" id="7154405435091251882">
-          <property name="name" nameId="tpck.1169194664001" value="DeutschMark" />
-        </node>
+      <node role="sensors" roleId="azm4.622052415736893205" type="azm4.NumericalSensor" typeId="azm4.622052415736893050" id="1460280003000938456">
+        <property name="name" nameId="tpck.1169194664001" value="Brightness" />
+        <property name="minValue" nameId="azm4.622052415736891758" value="0" />
+        <property name="maxValue" nameId="azm4.622052415736891759" value="30000" />
+        <property name="id" nameId="azm4.7405209520398059588" value="enocean?brightnesshugeid123123123" />
+        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MeasurementUnitBase" typeId="azm4.7405209520398143072" id="1460280003000938457" />
       </node>
       <node role="sensors" roleId="azm4.622052415736893205" type="azm4.BooleanSensor" typeId="azm4.622052415736893045" id="6657626076223133253">
-        <property name="name" nameId="tpck.1169194664001" value="sens" />
+        <property name="name" nameId="tpck.1169194664001" value="Occupancy" />
         <property name="id" nameId="azm4.7405209520398059588" value="123123" />
       </node>
-      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.BooleanActuator" typeId="azm4.622052415736893114" id="6657626076223133254">
-        <property name="name" nameId="tpck.1169194664001" value="act" />
-        <property name="id" nameId="azm4.7405209520398059588" value="asad" />
-      </node>
-      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.NumericalActuator" typeId="azm4.622052415736893133" id="7154405435091236881">
-        <property name="name" nameId="tpck.1169194664001" value="actNum" />
+      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.NumericalActuator" typeId="azm4.622052415736893133" id="1460280003000938459">
+        <property name="name" nameId="tpck.1169194664001" value="Blinds" />
         <property name="minValue" nameId="azm4.622052415736891758" value="0" />
-        <property name="maxValue" nameId="azm4.622052415736891759" value="15" />
-        <property name="id" nameId="azm4.7405209520398059588" value="213123" />
-        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUProcent" typeId="azm4.622052415736869233" id="7154405435091237689" />
+        <property name="maxValue" nameId="azm4.622052415736891759" value="100" />
+        <property name="id" nameId="azm4.7405209520398059588" value="enoceanhugeid?blindsidI123123123" />
+        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUProcent" typeId="azm4.622052415736869233" id="1460280003000938461" />
+      </node>
+      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.BooleanActuator" typeId="azm4.622052415736893114" id="1460280003000938466">
+        <property name="name" nameId="tpck.1169194664001" value="LightRight" />
+        <property name="id" nameId="azm4.7405209520398059588" value="enocean?LightsIdOnOf123123123" />
+      </node>
+      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.BooleanActuator" typeId="azm4.622052415736893114" id="1460280003000938468">
+        <property name="name" nameId="tpck.1169194664001" value="LightLeft" />
+        <property name="id" nameId="azm4.7405209520398059588" value="enocean?LightsIdOnOf345345345" />
       </node>
     </node>
   </root>

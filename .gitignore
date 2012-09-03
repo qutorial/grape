@@ -8,7 +8,7 @@
 
 
 #Kate files
-*.*~x
+*.*~
 
 #MPS configuration files
 *.iws
@@ -35,13 +35,13 @@ junit*.properties
 
 # -----------------------------------------------------------
 # * languages
-grape/languages/*/classes_gen
-grape/languages/*/source_gen
-grape/languages/*/source_gen.caches
+*/languages/*/classes_gen
+*/languages/*/source_gen
+*/languages/*/source_gen.caches
 
-grape/solutions/*/classes_gen
-grape/solutions/*/source_gen
-grape/solutions/*/source_gen.caches
+*/solutions/*/classes_gen
+*/solutions/*/source_gen
+*/solutions/*/source_gen.caches
 
 # -----------------------------------------------------------
 # * lib - here we seem to need the generated sources.
