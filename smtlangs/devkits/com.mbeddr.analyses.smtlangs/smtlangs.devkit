@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="com.mbeddr.analyses.smtlangs" uuid="4236efaf-b27f-4ea5-b3db-b83c270c9ca2">
+  <exported-language name="c3672eb2-7c1c-4a7d-bf76-a922b612faa9(com.mbeddr.analyses.cvc3linear)" />
   <exported-language name="dec5efb1-335c-42a3-860a-a14647a8ada5(com.mbeddr.analyses.universalSMT)" />
   <extendedDevKits>
     <extendedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</extendedDevKit>

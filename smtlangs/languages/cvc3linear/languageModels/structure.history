@@ -12,5 +12,11 @@
     </dependencies>
     <rename id="tii6.914397867000654324" type="CONCEPT" from="VariableDeclaration" to="CVC3VariableDeclaration" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tii6" modelUID="r:5448c453-e8c4-4228-a674-7a012ec55794(com.mbeddr.analyses.cvc3linear.structure)" version="1" />
+    </dependencies>
+    <rename id="tii6.51331732531714833" type="PROPERTY" from="showiniti" to="showInitExpression" />
+  </StructureModification>
 </history>
 

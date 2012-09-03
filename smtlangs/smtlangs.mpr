@@ -7,7 +7,9 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="${project}/devkits/com.mbeddr.analyses.smtlangs/smtlangs.devkit" folder="" />
+      <modulePath path="${project}/languages/cvc3linear/cvc3linear.mpl" />
       <modulePath path="${project}/languages/universalSMT/universalSMT.mpl" />
+      <modulePath path="${project}/solutions/com.mbeddr.analyses.cvc3linear.sandbox/sandbox.msd" folder="" />
       <modulePath path="${project}/solutions/com.mbeddr.analyses.universalSMT.sandbox/sandbox.msd" folder="" />
     </projectModules>
     <genConfs />
@@ -17,7 +19,7 @@
     <option name="version" value="2.5" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
   </component>
 </project>
 
