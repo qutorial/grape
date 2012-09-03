@@ -6,6 +6,7 @@
   <sourcePath />
   <usedLanguages>
     <usedLanguage>dec5efb1-335c-42a3-860a-a14647a8ada5(com.mbeddr.analyses.universalSMT)</usedLanguage>
+    <usedLanguage>84bfb62c-5304-4b38-9493-10ee6a8a8019(com.mbeddr.analyses.universalSMT2Yices)</usedLanguage>
     <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
   </usedLanguages>
   <usedDevKits>

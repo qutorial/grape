@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.analyses.universalSMT2Yices" uuid="84bfb62c-5304-4b38-9493-10ee6a8a8019" doNotGenerateAdapters="false">
+<language namespace="com.mbeddr.analyses.universalSMT2Yices" uuid="84bfb62c-5304-4b38-9493-10ee6a8a8019" doNotGenerateAdapters="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" />
   </models>

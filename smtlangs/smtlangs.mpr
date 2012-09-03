@@ -10,6 +10,7 @@
       <modulePath path="${project}/languages/cvc3linear/cvc3linear.mpl" />
       <modulePath path="${project}/languages/universalSMT/universalSMT.mpl" />
       <modulePath path="${project}/languages/universalSMT2CVC3/universalSMT2CVC3.mpl" />
+      <modulePath path="${project}/languages/universalSMT2Yices/universalSMT2Yices.mpl" />
       <modulePath path="${project}/solutions/com.mbeddr.analyses.cvc3linear.sandbox/sandbox.msd" folder="" />
       <modulePath path="${project}/solutions/com.mbeddr.analyses.universalSMT.sandbox/sandbox.msd" folder="" />
     </projectModules>
