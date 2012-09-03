@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="-1" />
+    </dependencies>
+    <rename id="tul.914397867000654325" type="CONCEPT" from="SMTInputModule" to="UniversalSMTInputModule" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="0" />
+    </dependencies>
+    <rename id="tul.914397867000654684" type="CONCEPT" from="UniversalSMTTask" to="UniversalSMTTaskBase" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="1" />
+    </dependencies>
+    <rename id="tul.3281752666901887194" type="PROPERTY" from="optionalDescription" to="verbalDescription" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="2" />
+    </dependencies>
+    <rename id="tul.914397867000675762" type="CONCEPT" from="VariableReferenceInExpression" to="USMTVariableReferenceInExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="3" />
+    </dependencies>
+    <rename id="tul.914397867000654689" type="CONCEPT" from="Assumption" to="USMTAssumption" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="4" />
+    </dependencies>
+    <rename id="tul.914397867000654324" type="CONCEPT" from="VariableDeclaration" to="USMTVariableDeclaration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="5" />
+    </dependencies>
+    <rename id="tul.914397867000654684" type="CONCEPT" from="UniversalSMTTaskBase" to="USMTTaskBase" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="6" />
+    </dependencies>
+    <rename id="tul.914397867000656082" type="CONCEPT" from="UnsatisfiabilityTask" to="USMTUnsatisfiabilityTask" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="7" />
+    </dependencies>
+    <rename id="tul.914397867000654325" type="CONCEPT" from="UniversalSMTInputModule" to="USMTInputModule" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="8" />
+    </dependencies>
+    <rename id="tul.914397867000675762" type="CONCEPT" from="USMTVariableReferenceInExpression" to="USMTVariableRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="tul" modelUID="r:f98632c8-113e-483a-8ed5-226edc72c581(com.mbeddr.analyses.universalSMT.structure)" version="9" />
+    </dependencies>
+    <rename id="tul.6229588243655180509" type="CONCEPT" from="USMTIntegerType" to="USMTRealType" />
+  </StructureModification>
+</history>
+
