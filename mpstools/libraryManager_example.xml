@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="LibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="mbeddr.core">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr.core" />
+	      <option name="path" value="path/to/your/mbeddr/code" />
+            </Library>
+          </value>
+        </entry>
+	 <entry key="assembla.mbeddr">
+          <value>
+            <Library>
+              <option name="name" value="assembla.mbeddr" />
+	      <option name="path" value="path/to/your/assembla/mbeddr/brunch/code" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="PathMacrosImpl">
+    <macro name="mbeddr.github.core.home" value="path/to/your/mbeddr" />
+    <macro name="org.fortiss.smtlangs" value="path/to/grape/githube/repository/smtlangs" />
+    <macro name="mbeddr.assembla.ext.home" value="path/to/your/assembla/mbeddr/brunch/code" />
+  </component>
+</application>
+
