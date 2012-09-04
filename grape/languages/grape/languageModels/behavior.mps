@@ -765,7 +765,6 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="128519297966004158" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="128519297966004155">
           <node role="expression" roleId="tpee.1068581517676" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="128519297966004157">
             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="128519297965995701" resolveInfo="res" />
