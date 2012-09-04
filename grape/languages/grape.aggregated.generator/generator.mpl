@@ -9,7 +9,10 @@
       <models>
         <modelRoot path="${language_descriptor}/generator/template" />
       </models>
-      <external-templates />
+      <external-templates>
+        <generator generatorUID="a953d24f-dff9-4f83-97f9-5b7f5a4ad1f8(com.mbeddr.analyses.universalSMT2Yices#3281752666901907267)" />
+        <generator generatorUID="d6ceba1e-d3e9-45ae-9d85-a67ebe600a29(com.mbeddr.analyses.yices#1611636138415493472)" />
+      </external-templates>
       <dependencies>
         <dependency reexport="false">dec5efb1-335c-42a3-860a-a14647a8ada5(com.mbeddr.analyses.universalSMT)</dependency>
         <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
