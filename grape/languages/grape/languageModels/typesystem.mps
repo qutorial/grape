@@ -8,18 +8,26 @@
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
-  <import index="azm4" modelUID="r:b910b1c5-7b43-4401-9cb7-c64c05ec4c44(grape.structure)" version="0" implicit="yes" />
+  <import index="azm4" modelUID="r:b910b1c5-7b43-4401-9cb7-c64c05ec4c44(grape.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="6657626076222937431">
-      <property name="name" nameId="tpck.1169194664001" value="typeof_DeviceReference" />
+      <property name="name" nameId="tpck.1169194664001" value="typeof_SensorReference" />
       <property name="virtualPackage" nameId="tpck.1193676396447" value="Rule" />
     </node>
     <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7154405435091235117">
       <property name="name" nameId="tpck.1169194664001" value="typeof_Consequence" />
+    </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2210880556468611477">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_ActuatorReference" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Rule" />
+    </node>
+    <node type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2210880556468719837">
+      <property name="name" nameId="tpck.1169194664001" value="typeof_ParameterReference" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Parameters" />
     </node>
   </roots>
   <root id="6657626076222937431">
@@ -47,7 +55,7 @@
               <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="6657626076223131471">
                 <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="6657626076223131473">
                   <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6657626076223131474">
-                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8463282783691618440" resolveInfo="Int32tType" />
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
                   </node>
                 </node>
               </node>
@@ -98,7 +106,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6657626076222937433">
       <property name="name" nameId="tpck.1169194664001" value="ref" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
     </node>
   </root>
   <root id="7154405435091235117">
@@ -332,6 +340,111 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7154405435091235121">
       <property name="name" nameId="tpck.1169194664001" value="consequence" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="azm4.7154405435091226010" resolveInfo="Consequence" />
+    </node>
+  </root>
+  <root id="2210880556468611477">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2210880556468611478">
+      <node role="statement" roleId="tpee.1068581517665" type="tp25.IfInstanceOfStatement" typeId="tp25.1883223317721008708" id="2210880556468611479">
+        <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.7405209520398143070" resolveInfo="INumericalDevice" />
+        <node role="nodeExpression" roleId="tp25.1883223317721008710" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2210880556468611480">
+          <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2210880556468611481">
+            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2210880556468611510" resolveInfo="actuatorReference" />
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2210880556468611512">
+            <link role="link" roleId="tp25.1138056516764" targetNodeId="azm4.2210880556468579965" />
+          </node>
+        </node>
+        <node role="body" roleId="tp25.1883223317721008709" type="tpee.StatementList" typeId="tpee.1068580123136" id="2210880556468611483">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="2210880556468611484">
+            <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2210880556468611485">
+              <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="2210880556468611486">
+                <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2210880556468611487">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2210880556468611510" resolveInfo="actuatorReference" />
+                </node>
+              </node>
+            </node>
+            <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2210880556468611488">
+              <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2210880556468611489">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="2210880556468611490">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2210880556468611491">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="variable" roleId="tp25.1883223317721008711" type="tp25.IfInstanceOfVariable" typeId="tp25.1883223317721008713" id="2210880556468611492">
+          <property name="name" nameId="tpck.1169194664001" value="nd" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="2210880556468611493" />
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tp25.IfInstanceOfStatement" typeId="tp25.1883223317721008708" id="2210880556468611494">
+        <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736893043" resolveInfo="IBooleanDevice" />
+        <node role="nodeExpression" roleId="tp25.1883223317721008710" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2210880556468611495">
+          <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2210880556468611496">
+            <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2210880556468611510" resolveInfo="actuatorReference" />
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2210880556468611514">
+            <link role="link" roleId="tp25.1138056516764" targetNodeId="azm4.2210880556468579965" />
+          </node>
+        </node>
+        <node role="body" roleId="tp25.1883223317721008709" type="tpee.StatementList" typeId="tpee.1068580123136" id="2210880556468611498">
+          <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="2210880556468611499">
+            <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2210880556468611500">
+              <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="2210880556468611501">
+                <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2210880556468611502">
+                  <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2210880556468611510" resolveInfo="actuatorReference" />
+                </node>
+              </node>
+            </node>
+            <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2210880556468611503">
+              <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2210880556468611504">
+                <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="2210880556468611505">
+                  <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2210880556468611506">
+                    <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8860443239512128058" resolveInfo="BooleanType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="variable" roleId="tp25.1883223317721008711" type="tp25.IfInstanceOfVariable" typeId="tp25.1883223317721008713" id="2210880556468611507">
+          <property name="name" nameId="tpck.1169194664001" value="bd" />
+          <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="2210880556468611508" />
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2210880556468611509" />
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2210880556468611510">
+      <property name="name" nameId="tpck.1169194664001" value="actuatorReference" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="azm4.2210880556468579964" resolveInfo="ActuatorReference" />
+    </node>
+  </root>
+  <root id="2210880556468719837">
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2210880556468719838">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="2210880556468719880">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2210880556468719884">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2210880556468719885">
+            <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="2210880556468719896">
+              <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2210880556468719897">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1l.8864856114140038681" resolveInfo="DoubleType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="2210880556468719883">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="2210880556468719841">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="2210880556468719843">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="2210880556468719839" resolveInfo="parameterReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2210880556468719839">
+      <property name="name" nameId="tpck.1169194664001" value="parameterReference" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="azm4.2210880556468719829" resolveInfo="ParameterReference" />
     </node>
   </root>
 </model>

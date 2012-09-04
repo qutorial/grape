@@ -5,7 +5,7 @@
   <language namespace="af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)" />
   <language namespace="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
-  <import index="azm4" modelUID="r:b910b1c5-7b43-4401-9cb7-c64c05ec4c44(grape.structure)" version="0" implicit="yes" />
+  <import index="azm4" modelUID="r:b910b1c5-7b43-4401-9cb7-c64c05ec4c44(grape.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="1i04" modelUID="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" version="-1" implicit="yes" />
@@ -60,6 +60,14 @@
     <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="7154405435091309318">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="Rule" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="azm4.7154405435091241893" resolveInfo="Condition" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2210880556468750806">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Rule" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="azm4.2210880556468579964" resolveInfo="ActuatorReference" />
+    </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="2210880556468750862">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Rule" />
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
     </node>
   </roots>
   <root id="7405209520398153711">
@@ -330,7 +338,7 @@
           </node>
           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="7154405435091281161">
             <node role="statement" roleId="tpee.1068581517665" type="tp25.IfInstanceOfStatement" typeId="tp25.1883223317721008708" id="7154405435091353061">
-              <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+              <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
               <node role="variable" roleId="tp25.1883223317721008711" type="tp25.IfInstanceOfVariable" typeId="tp25.1883223317721008713" id="7154405435091353064">
                 <property name="name" nameId="tpck.1169194664001" value="dr1" />
                 <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="7154405435091353065" />
@@ -367,7 +375,7 @@
               </node>
               <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="7154405435091365425">
                 <node role="statement" roleId="tpee.1068581517665" type="tp25.IfInstanceOfStatement" typeId="tp25.1883223317721008708" id="7154405435091365426">
-                  <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+                  <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
                   <node role="variable" roleId="tp25.1883223317721008711" type="tp25.IfInstanceOfVariable" typeId="tp25.1883223317721008713" id="7154405435091365427">
                     <property name="name" nameId="tpck.1169194664001" value="dr2" />
                     <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="7154405435091365428" />
@@ -404,7 +412,7 @@
                   </node>
                   <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="7154405435091366611">
                     <node role="statement" roleId="tpee.1068581517665" type="tp25.IfInstanceOfStatement" typeId="tp25.1883223317721008708" id="7154405435091366612">
-                      <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+                      <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
                       <node role="variable" roleId="tp25.1883223317721008711" type="tp25.IfInstanceOfVariable" typeId="tp25.1883223317721008713" id="7154405435091366613">
                         <property name="name" nameId="tpck.1169194664001" value="dr3" />
                         <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="7154405435091366614" />
@@ -441,7 +449,7 @@
                       </node>
                       <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="7154405435091366634">
                         <node role="statement" roleId="tpee.1068581517665" type="tp25.IfInstanceOfStatement" typeId="tp25.1883223317721008708" id="7154405435091366635">
-                          <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+                          <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
                           <node role="variable" roleId="tp25.1883223317721008711" type="tp25.IfInstanceOfVariable" typeId="tp25.1883223317721008713" id="7154405435091366636">
                             <property name="name" nameId="tpck.1169194664001" value="dr4" />
                             <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="7154405435091366637" />
@@ -479,7 +487,7 @@
                           </node>
                           <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="7154405435091366660">
                             <node role="statement" roleId="tpee.1068581517665" type="tp25.IfInstanceOfStatement" typeId="tp25.1883223317721008708" id="7154405435091366661">
-                              <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+                              <link role="nodeConcept" roleId="tp25.1883223317721008712" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
                               <node role="variable" roleId="tp25.1883223317721008711" type="tp25.IfInstanceOfVariable" typeId="tp25.1883223317721008713" id="7154405435091366662">
                                 <property name="name" nameId="tpck.1169194664001" value="dr5" />
                                 <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="7154405435091366663" />
@@ -537,7 +545,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7154405435091362974">
         <property name="name" nameId="tpck.1169194664001" value="res" />
         <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="7154405435091362976">
-          <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+          <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7154405435091362985" />
@@ -546,19 +554,19 @@
       <property name="name" nameId="tpck.1169194664001" value="getDeviceRefs" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7154405435091352978" />
       <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="7154405435091352981">
-        <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+        <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7154405435091352980">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7154405435091362987">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7154405435091362988">
             <property name="name" nameId="tpck.1169194664001" value="res" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="7154405435091362989">
-              <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+              <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7154405435091362991">
               <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeListCreator" typeId="tp25.1145567426890" id="7154405435091362992">
                 <node role="createdType" roleId="tp25.1145567471833" type="tp25.SNodeListType" typeId="tp25.1145383075378" id="7154405435091362993">
-                  <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="azm4.622052415736918537" resolveInfo="DeviceReference" />
+                  <link role="elementConcept" roleId="tp25.1145383142433" targetNodeId="azm4.622052415736918537" resolveInfo="SensorReference" />
                 </node>
               </node>
             </node>
@@ -588,6 +596,60 @@
     </node>
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="7154405435091309319">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7154405435091309320" />
+    </node>
+  </root>
+  <root id="2210880556468750806">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2231107713271337202">
+      <property name="name" nameId="tpck.1169194664001" value="renderReadable" />
+      <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
+      <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2231107713271337203" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="2231107713271337206" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2231107713271337205">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2231107713271337262">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2210880556468750855">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2210880556468750831">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="2210880556468750814" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2210880556468750837">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="azm4.2210880556468579965" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2210880556468750861">
+              <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2210880556468750807">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2210880556468750808" />
+    </node>
+  </root>
+  <root id="2210880556468750862">
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="2210880556468750865">
+      <property name="name" nameId="tpck.1169194664001" value="renderReadable" />
+      <property name="isVirtual" nameId="1i04.1225194472832" value="true" />
+      <property name="isAbstract" nameId="1i04.1225194472834" value="false" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2210880556468750866" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="2210880556468750867" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2210880556468750868">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2210880556468750869">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2210880556468750915">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2210880556468750891">
+              <node role="operand" roleId="tpee.1197027771414" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="2210880556468750874" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="2210880556468750897">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="azm4.622052415736918538" />
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="2210880556468750920">
+              <link role="property" roleId="tp25.1138056395725" targetNodeId="tpck.1169194664001" resolveInfo="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="2210880556468750863">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2210880556468750864" />
     </node>
   </root>
 </model>
