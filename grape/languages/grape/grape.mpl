@@ -7,7 +7,7 @@
     <model modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
   </accessoryModels>
   <generators>
-    <generator name="grape_empty" generatorUID="grape#6699152204786554440" uuid="5941779b-042f-45bc-9fd2-d58f72ecdfd4">
+    <generator name="empty_grape" generatorUID="grape#4815271134024581897" uuid="77b4c3c1-f588-4bbf-af31-246c18c5512c">
       <models>
         <modelRoot path="${language_descriptor}/generator/template" />
       </models>
@@ -17,11 +17,8 @@
       <dependencies>
         <dependency reexport="false">d951d43f-2d7d-41ef-843e-f62c090e6ab6(grape.aggregated.generator)</dependency>
         <dependency reexport="false">85bddd46-c8e7-4da6-aacf-1da470b45b19(grape.aggregated.generator#6699152204786504043)</dependency>
-        <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
       </dependencies>
       <usedLanguages>
-        <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
-        <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
       </usedLanguages>

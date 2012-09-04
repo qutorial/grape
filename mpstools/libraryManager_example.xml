@@ -19,6 +19,14 @@
             </Library>
           </value>
         </entry>
+	<entry key="smtlangs">
+          <value>
+            <Library>
+              <option name="name" value="smtlangs" />
+	      <option name="path" value="path/to/grape/githube/repository/smtlangs" />
+            </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
