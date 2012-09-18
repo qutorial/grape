@@ -46,11 +46,9 @@
                     <link role="definition" roleId="azm4.2210880556468719830" targetNodeId="2210880556468732483" resolveInfo="MediumBrightness" />
                   </node>
                 </node>
-                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NotExpression" typeId="mj1l.3830958861296781575" id="1460280003000938507">
-                  <node role="expression" roleId="mj1l.7254843406768839760" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="1460280003000938483">
-                    <property name="devName" nameId="azm4.7154405435091252569" value="Occupancy" />
-                    <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6657626076223133253" resolveInfo="Occupancy" />
-                  </node>
+                <node role="right" roleId="mj1l.8860443239512128065" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="1460280003000938483">
+                  <property name="devName" nameId="azm4.7154405435091252569" value="Occupancy" />
+                  <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6657626076223133253" resolveInfo="Occupancy" />
                 </node>
               </node>
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1460280003000938496">
@@ -71,7 +69,7 @@
         </node>
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="1460280003000938527">
           <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="1460280003000938466" resolveInfo="LightRight" />
-          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="2210880556468733111" />
+          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="4278550933587556354" />
         </node>
       </node>
       <node role="sensors" roleId="azm4.622052415736893205" type="azm4.NumericalSensor" typeId="azm4.622052415736893050" id="1460280003000938456">

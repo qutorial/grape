@@ -5,6 +5,7 @@
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="5" />
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="17" />
+  <import index="1eu" modelUID="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.analyses.yices.structure)" version="8" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="azm4" modelUID="r:b910b1c5-7b43-4401-9cb7-c64c05ec4c44(grape.structure)" version="1" implicit="yes" />
@@ -327,6 +328,9 @@
       <property name="name" nameId="tpck.1169194664001" value="devName" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4278550933587736336">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.4278550933587695099" resolveInfo="IPrintableExpression" />
+    </node>
   </root>
   <root id="7154405435091226010">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7154405435091226011">
@@ -361,6 +365,9 @@
       <property name="name" nameId="tpck.1169194664001" value="devName" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4278550933587736335">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.4278550933587695099" resolveInfo="IPrintableExpression" />
+    </node>
   </root>
   <root id="2210880556468709571">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2210880556468709572">
@@ -378,6 +385,9 @@
       <property name="role" nameId="tpce.1071599776563" value="definition" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2210880556468709571" resolveInfo="ParameterDefinition" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4278550933587736280">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.4278550933587695099" resolveInfo="IPrintableExpression" />
     </node>
   </root>
 </model>
