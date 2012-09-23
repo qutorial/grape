@@ -78,6 +78,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="Parameters" />
       <link role="concept" roleId="1i04.1225194240799" targetNodeId="azm4.2210880556468719829" resolveInfo="ParameterReference" />
     </node>
+    <node type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6470535853046211259">
+      <link role="concept" roleId="1i04.1225194240799" targetNodeId="azm4.6470535853046208999" resolveInfo="PresentationViewController" />
+    </node>
   </roots>
   <root id="7405209520398153711">
     <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="622052415736708999">
@@ -1114,6 +1117,36 @@
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.StringType" typeId="tpee.1225271177708" id="4278550933587736284" />
+    </node>
+  </root>
+  <root id="6470535853046211259">
+    <node role="staticMethod" roleId="1i04.1225194240806" type="1i04.StaticConceptMethodDeclaration" typeId="1i04.1225194588610" id="6470535853046211262">
+      <property name="name" nameId="tpck.1169194664001" value="showVerbose" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6470535853046211263" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="6470535853046211355" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6470535853046211265">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="6470535853046211356">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="6470535853046211358">
+            <property name="value" nameId="tpee.1068580123138" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="staticMethod" roleId="1i04.1225194240806" type="1i04.StaticConceptMethodDeclaration" typeId="1i04.1225194588610" id="6470535853046211359">
+      <property name="name" nameId="tpck.1169194664001" value="hi" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6470535853046211360" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="6470535853046211364" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6470535853046211362">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="6470535853046211365">
+          <node role="expression" roleId="tpee.1068581517676" type="tp25.StaticConceptMethodCall" typeId="tp25.1206019730951" id="6470535853046211369">
+            <link role="concept" roleId="tp25.1206019820684" targetNodeId="azm4.6470535853046208999" resolveInfo="PresentationViewController" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="6470535853046211262" resolveInfo="showVerbose" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="6470535853046211260">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6470535853046211261" />
     </node>
   </root>
 </model>

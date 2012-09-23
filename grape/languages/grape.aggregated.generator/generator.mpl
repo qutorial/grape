@@ -10,7 +10,7 @@
         <modelRoot path="${language_descriptor}/generator/template" />
       </models>
       <external-templates>
-        <generator generatorUID="a953d24f-dff9-4f83-97f9-5b7f5a4ad1f8(com.mbeddr.analyses.universalSMT2Yices#3281752666901907267)" />
+        <generator generatorUID="9403680d-eed6-4d01-9837-476210f032cb(com.mbeddr.analyses.universalSMT2CVC3#3304601929049020716)" />
         <generator generatorUID="d6ceba1e-d3e9-45ae-9d85-a67ebe600a29(com.mbeddr.analyses.yices#1611636138415493472)" />
       </external-templates>
       <dependencies>
