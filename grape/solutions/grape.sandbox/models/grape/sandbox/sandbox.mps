@@ -35,13 +35,8 @@
         <node role="condition" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="6470535853046035278">
           <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.AndExpression" typeId="mj1l.8399455261460717640" id="6470535853046035283">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.GreaterEqualsExpression" typeId="mj1l.8860443239512147447" id="6470535853046035289">
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6470535853046035295">
-                <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6470535853046035298">
-                  <property name="value" nameId="mj1l.8860443239512128104" value="5" />
-                </node>
-                <node role="left" roleId="mj1l.8860443239512128064" type="azm4.ParameterReference" typeId="azm4.2210880556468719829" id="6470535853046035292">
-                  <link role="definition" roleId="azm4.2210880556468719830" targetNodeId="6470535853046035264" resolveInfo="ComfortTemp" />
-                </node>
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="313283406403591465">
+                <property name="value" nameId="mj1l.8860443239512128104" value="29" />
               </node>
               <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="6470535853046035286">
                 <property name="devName" nameId="azm4.7154405435091252569" value="TempInOffice" />
@@ -63,13 +58,8 @@
         <property name="name" nameId="tpck.1169194664001" value="Fix" />
         <node role="condition" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="6572982796380106894">
           <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6572982796380106899">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6572982796380106905">
-              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6572982796380106908">
-                <property name="value" nameId="mj1l.8860443239512128104" value="5" />
-              </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="azm4.ParameterReference" typeId="azm4.2210880556468719829" id="6572982796380106902">
-                <link role="definition" roleId="azm4.2210880556468719830" targetNodeId="6470535853046035264" resolveInfo="ComfortTemp" />
-              </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="313283406403591467">
+              <property name="value" nameId="mj1l.8860443239512128104" value="29" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="6572982796380106896">
               <property name="devName" nameId="azm4.7154405435091252569" value="TempInOffice" />
@@ -98,12 +88,6 @@
           <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="6470535853046035273" resolveInfo="AirCond" />
           <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6470535853046036272" />
         </node>
-      </node>
-    </node>
-    <node role="parameters" roleId="azm4.2210880556468720076" type="azm4.ParameterDefinition" typeId="azm4.2210880556468709571" id="6470535853046035264">
-      <property name="name" nameId="tpck.1169194664001" value="ComfortTemp" />
-      <node role="value" roleId="azm4.2210880556468709572" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6470535853046035265">
-        <property name="value" nameId="mj1l.8860443239512128104" value="24" />
       </node>
     </node>
   </root>
