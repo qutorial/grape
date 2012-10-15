@@ -38,12 +38,12 @@
               <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="313283406403591465">
                 <property name="value" nameId="mj1l.8860443239512128104" value="29" />
               </node>
-              <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="6470535853046035286">
+              <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="7440291159193777756">
                 <property name="devName" nameId="azm4.7154405435091252569" value="TempInOffice" />
                 <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6470535853046035268" resolveInfo="TempInOffice" />
               </node>
             </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="6470535853046035280">
+            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="7440291159193777755">
               <property name="devName" nameId="azm4.7154405435091252569" value="OfficeOccupied" />
               <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6470535853046035266" resolveInfo="OfficeOccupied" />
             </node>
@@ -57,13 +57,13 @@
       <node role="rules" roleId="azm4.622052415736918573" type="azm4.Rule" typeId="azm4.622052415736918524" id="6572982796380106889">
         <property name="name" nameId="tpck.1169194664001" value="Fix" />
         <node role="condition" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="6572982796380106894">
-          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6572982796380106899">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="313283406403591467">
-              <property name="value" nameId="mj1l.8860443239512128104" value="29" />
-            </node>
-            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="6572982796380106896">
+          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="2789917786057705066">
+            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="2789917786057705067">
               <property name="devName" nameId="azm4.7154405435091252569" value="TempInOffice" />
               <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6470535853046035268" resolveInfo="TempInOffice" />
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="2789917786057705068">
+              <property name="value" nameId="mj1l.8860443239512128104" value="29" />
             </node>
           </node>
         </node>
@@ -78,7 +78,7 @@
         <node role="condition" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="6470535853046036250">
           <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="6470535853046036265">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="6470535853046036268" />
-            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="6470535853046036262">
+            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="7440291159193777758">
               <property name="devName" nameId="azm4.7154405435091252569" value="OfficeOccupied" />
               <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="6470535853046035266" resolveInfo="OfficeOccupied" />
             </node>

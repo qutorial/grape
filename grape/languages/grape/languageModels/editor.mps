@@ -80,6 +80,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="Parameters" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="azm4.2210880556468719829" resolveInfo="ParameterReference" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="5957829160396195904">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Actuators" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="azm4.5957829160396195903" resolveInfo="DeterminismCheckElement" />
+    </node>
   </roots>
   <root id="622052415736837716">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_ConceptProperty" typeId="tpc2.1137553248617" id="622052415736891751">
@@ -757,6 +761,14 @@
           <link role="styleClass" roleId="tpc2.1186406756722" targetNodeId="2210880556468709592" resolveInfo="ParameterReference" />
         </node>
       </node>
+    </node>
+  </root>
+  <root id="5957829160396195904">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="5957829160396195906">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="5957829160396195909">
+        <property name="text" nameId="tpc2.1073389577007" value="no editor for this concept" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5957829160396195908" />
     </node>
   </root>
 </model>
