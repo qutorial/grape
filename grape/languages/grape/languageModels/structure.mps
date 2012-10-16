@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:b910b1c5-7b43-4401-9cb7-c64c05ec4c44(grape.structure)" version="1">
+<model modelUID="r:b910b1c5-7b43-4401-9cb7-c64c05ec4c44(grape.structure)" version="2">
   <persistence version="7" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -8,7 +8,7 @@
   <import index="1eu" modelUID="r:50ade53b-ed6e-481d-8b4b-ee52df9b4152(com.mbeddr.analyses.yices.structure)" version="8" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="azm4" modelUID="r:b910b1c5-7b43-4401-9cb7-c64c05ec4c44(grape.structure)" version="1" implicit="yes" />
+  <import index="azm4" modelUID="r:b910b1c5-7b43-4401-9cb7-c64c05ec4c44(grape.structure)" version="2" implicit="yes" />
   <roots>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7405209520398016721">
       <property name="name" nameId="tpck.1169194664001" value="Building" />
@@ -136,8 +136,12 @@
     </node>
     <node type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5957829160396195903">
       <property name="virtualPackage" nameId="tpck.1193676396447" value="Actuators" />
-      <property name="name" nameId="tpck.1169194664001" value="DeterminismCheckElement" />
+      <property name="name" nameId="tpck.1169194664001" value="RulePairElement" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3049505915474251636">
+      <property name="name" nameId="tpck.1169194664001" value="ICacheHaving" />
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Tools" />
     </node>
   </roots>
   <root id="7405209520398016721">
@@ -343,6 +347,9 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4278550933587736336">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.4278550933587695099" resolveInfo="IPrintableExpression" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3049505915474251667">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3049505915474251636" resolveInfo="ICacheHaving" />
+    </node>
   </root>
   <root id="7154405435091226010">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7154405435091226011">
@@ -380,11 +387,15 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4278550933587736335">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.4278550933587695099" resolveInfo="IPrintableExpression" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3049505915474251659">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3049505915474251636" resolveInfo="ICacheHaving" />
+    </node>
   </root>
   <root id="2210880556468709571">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2210880556468709572">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="value" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1l.8860443239512128103" resolveInfo="NumberLiteral" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2210880556468709575">
@@ -400,6 +411,17 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4278550933587736280">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.4278550933587695099" resolveInfo="IPrintableExpression" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3049505915474251647">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3049505915474251636" resolveInfo="ICacheHaving" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="218407636950682724">
+      <property name="name" nameId="tpck.1169194664001" value="definitionName" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="218407636950875162">
+      <property name="name" nameId="tpck.1169194664001" value="valueString" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
   <root id="6470535853046208999">
@@ -427,5 +449,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="622052415736893111" resolveInfo="ActuatorBase" />
     </node>
   </root>
+  <root id="3049505915474251636" />
 </model>
 

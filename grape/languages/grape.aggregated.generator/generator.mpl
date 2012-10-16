@@ -23,6 +23,8 @@
       <usedLanguages>
         <usedLanguage>dec5efb1-335c-42a3-860a-a14647a8ada5(com.mbeddr.analyses.universalSMT)</usedLanguage>
         <usedLanguage>61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</usedLanguage>
+        <usedLanguage>0af1f34c-8040-4212-b292-5d0f6683079f(grape)</usedLanguage>
+        <usedLanguage>d951d43f-2d7d-41ef-843e-f62c090e6ab6(grape.aggregated.generator)</usedLanguage>
         <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
