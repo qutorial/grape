@@ -362,6 +362,17 @@
                     </node>
                   </node>
                 </node>
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8243259794780788364">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusAssignmentExpression" typeId="tpee.1215695189714" id="8243259794780788406">
+                    <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8243259794780788409">
+                      <property name="value" nameId="tpee.1070475926801" value="\n" />
+                    </node>
+                    <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8243259794780788365">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4832836059417096928" resolveInfo="res" />
+                    </node>
+                  </node>
+                </node>
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8243259794780788410" />
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4832836059417102277" />
               </node>
             </node>
@@ -618,7 +629,7 @@
                             </node>
                             <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5957829160396270402">
                               <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5957829160396270403">
-                                <property name="value" nameId="tpee.1070475926801" value=" the rule systen seems non deterministic.\n" />
+                                <property name="value" nameId="tpee.1070475926801" value=" the rule systen seems not deterministic." />
                               </node>
                               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5957829160396270404">
                                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5957829160396270405">
@@ -789,7 +800,7 @@
                         </node>
                         <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5957829160396270413">
                           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5957829160396270414">
-                            <property name="value" nameId="tpee.1070475926801" value=" the rule systen seems deterministic.\n" />
+                            <property name="value" nameId="tpee.1070475926801" value=" the rule systen seems deterministic." />
                           </node>
                           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5957829160396270415">
                             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5957829160396270416">
@@ -813,6 +824,17 @@
                   </node>
                 </node>
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5957829160396267750" />
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8243259794780788412">
+                  <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusAssignmentExpression" typeId="tpee.1215695189714" id="8243259794780788413">
+                    <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8243259794780788414">
+                      <property name="value" nameId="tpee.1070475926801" value="\n" />
+                    </node>
+                    <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8243259794780788415">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5957829160396267631" resolveInfo="res" />
+                    </node>
+                  </node>
+                </node>
+                <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="8243259794780803127" />
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5957829160396267754" />
               </node>
             </node>
@@ -1076,7 +1098,7 @@
                                     <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="5957829160396267532" />
                                     <node role="initializer" roleId="tpee.1068431790190" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5957829160396267557">
                                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5957829160396267536">
-                                        <property name="value" nameId="tpee.1070475926801" value="Completeness test\n" />
+                                        <property name="value" nameId="tpee.1070475926801" value="     Completeness test\n\n" />
                                       </node>
                                       <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4832836059417111086">
                                         <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="4832836059417111087">
@@ -1171,7 +1193,7 @@
                                   <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusAssignmentExpression" typeId="tpee.1215695189714" id="5957829160396270000">
                                     <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5957829160396270022">
                                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5957829160396270003">
-                                        <property name="value" nameId="tpee.1070475926801" value="\nDeterminism test\n" />
+                                        <property name="value" nameId="tpee.1070475926801" value="\n     Determinism test\n\n" />
                                       </node>
                                       <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5957829160396270025">
                                         <node role="operand" roleId="tpee.1197027771414" type="tp4f.ThisClassifierExpression" typeId="tp4f.1205752633985" id="5957829160396270026">
