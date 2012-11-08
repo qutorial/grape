@@ -799,10 +799,10 @@
   <root id="8990124198714155836">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8990124198714155838">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8990124198714155842">
-        <property name="text" nameId="tpc2.1073389577007" value="for " />
+        <property name="text" nameId="tpc2.1073389577007" value="for" />
       </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8990124198714155843">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="azm4.8990124198714155835" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="8990124198714218116">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="azm4.8990124198714218114" resolveInfo="time" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8990124198714155840" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8990124198714155845">

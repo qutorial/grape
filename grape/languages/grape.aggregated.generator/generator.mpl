@@ -56,6 +56,7 @@
     <dependency reexport="false">0af1f34c-8040-4212-b292-5d0f6683079f(grape)</dependency>
   </dependencies>
   <usedLanguages>
+    <usedLanguage>3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)</usedLanguage>
     <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
