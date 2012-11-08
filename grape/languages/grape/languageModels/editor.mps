@@ -84,6 +84,10 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="Actuators" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="azm4.5957829160396195903" resolveInfo="RulePairElement" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="8990124198714155836">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Rule" />
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="azm4.8990124198714155834" resolveInfo="ConditionTimeExpression" />
+    </node>
   </roots>
   <root id="622052415736837716">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_ConceptProperty" typeId="tpc2.1137553248617" id="622052415736891751">
@@ -634,8 +638,29 @@
     </node>
   </root>
   <root id="7154405435091241895">
-    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7154405435091280872">
-      <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="azm4.7154405435091241894" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8990124198714155847">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8990124198714155848" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7154405435091280872">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="azm4.7154405435091241894" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8990124198714155850">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="azm4.8990124198714155846" />
+        <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="8990124198714156046">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8990124198714156047">
+            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8990124198714156048">
+              <node role="expression" roleId="tpee.1068580123156" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="8990124198714156077">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="8990124198714156080" />
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8990124198714156060">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="8990124198714156049" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8990124198714156065">
+                    <link role="link" roleId="tp25.1138056516764" targetNodeId="azm4.8990124198714155846" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </root>
   <root id="1731331358108182414">
@@ -769,6 +794,20 @@
         <property name="text" nameId="tpc2.1073389577007" value="no editor for this concept" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="5957829160396195908" />
+    </node>
+  </root>
+  <root id="8990124198714155836">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8990124198714155838">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8990124198714155842">
+        <property name="text" nameId="tpc2.1073389577007" value="for " />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8990124198714155843">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="azm4.8990124198714155835" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8990124198714155840" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8990124198714155845">
+        <property name="text" nameId="tpc2.1073389577007" value="sec" />
+      </node>
     </node>
   </root>
 </model>
