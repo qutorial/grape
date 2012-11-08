@@ -20,14 +20,6 @@
     </node>
     <node role="rooms" roleId="azm4.7405209520398027059" type="azm4.Room" typeId="azm4.7405209520398027057" id="8243259794780856895">
       <property name="name" nameId="tpck.1169194664001" value="Office225" />
-      <node role="rules" roleId="azm4.622052415736918573" type="azm4.Rule" typeId="azm4.622052415736918524" id="3814407133257806280">
-        <property name="name" nameId="tpck.1169194664001" value="testRule" />
-        <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="3814407133257806282">
-          <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="8243259794780856899" resolveInfo="AirConditioner" />
-          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="3814407133257806298" />
-        </node>
-        <node role="condition" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="3814407133257806300" />
-      </node>
       <node role="sensors" roleId="azm4.622052415736893205" type="azm4.BooleanSensor" typeId="azm4.622052415736893045" id="8243259794780856898">
         <property name="name" nameId="tpck.1169194664001" value="Occupancy" />
         <property name="id" nameId="azm4.7405209520398059588" value="123123123132" />
@@ -38,13 +30,6 @@
         <property name="maxValue" nameId="azm4.622052415736891759" value="40" />
         <property name="id" nameId="azm4.7405209520398059588" value="34325435" />
         <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUDegreeCelcius" typeId="azm4.622052415736837714" id="8243259794780856903" />
-      </node>
-      <node role="sensors" roleId="azm4.622052415736893205" type="azm4.NumericalSensor" typeId="azm4.622052415736893050" id="3814407133257806291">
-        <property name="name" nameId="tpck.1169194664001" value="TemperatureOutside" />
-        <property name="minValue" nameId="azm4.622052415736891758" value="10" />
-        <property name="maxValue" nameId="azm4.622052415736891759" value="40" />
-        <property name="id" nameId="azm4.7405209520398059588" value="hallo" />
-        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUDegreeCelcius" typeId="azm4.622052415736837714" id="3814407133257806293" />
       </node>
       <node role="actuators" roleId="azm4.622052415736893206" type="azm4.BooleanActuator" typeId="azm4.622052415736893114" id="8243259794780856899">
         <property name="name" nameId="tpck.1169194664001" value="AirConditioner" />
