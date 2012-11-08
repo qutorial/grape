@@ -441,6 +441,7 @@
       </node>
     </node>
     <node role="rootMappingRule" roleId="tpf8.1167514678247" type="tpf8.Root_MappingRule" typeId="tpf8.1167514355419" id="6699152204786552814">
+      <property name="keepSourceRoot" nameId="tpf8.1177959072138" value="true" />
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="e1qd.6699152204786499545" resolveInfo="BuildingContainer" />
       <link role="template" roleId="tpf8.1167514355421" targetNodeId="6699152204786552354" resolveInfo="DroolsInXML" />
       <node role="conditionFunction" roleId="tpf8.1167169362365" type="tpf8.BaseMappingRule_Condition" typeId="tpf8.1167168920554" id="6699152204786552815">
@@ -1027,7 +1028,12 @@
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8990124198714233901">
                             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4wsc.8990124198714211971" resolveInfo="getTranslationForConditionWithTimeExpression" />
                             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4wsc.8990124198714199922" resolveInfo="DroolsGeneratorHelper" />
-                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8990124198714233902" />
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8990124198714237648">
+                              <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8990124198714233902" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8990124198714237657">
+                                <link role="link" roleId="tp25.1138056516764" targetNodeId="azm4.2269534811313078935" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
