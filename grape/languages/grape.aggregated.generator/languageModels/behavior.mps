@@ -649,15 +649,11 @@
                               <property name="value" nameId="tpee.1070475926801" value=", unit == \&quot;" />
                             </node>
                             <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8990124198714217907">
-                              <node role="operand" roleId="tpee.1197027771414" type="tp25.SNodeTypeCastExpression" typeId="tp25.1140137987495" id="8990124198714217885">
-                                <property name="asCast" nameId="tp25.1238684351431" value="true" />
-                                <link role="concept" roleId="tp25.1140138128738" targetNodeId="azm4.7405209520398143070" resolveInfo="INumericalDevice" />
-                                <node role="leftExpression" roleId="tp25.1140138123956" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8990124198714217864">
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1249320109307561755" resolveInfo="devReference" />
-                                </node>
+                              <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="8990124198714217864">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1249320109307561755" resolveInfo="devReference" />
                               </node>
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8990124198714217913">
-                                <link role="link" roleId="tp25.1138056516764" targetNodeId="azm4.622052415736891760" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_ConceptMethodCall" typeId="tp25.1179409122411" id="1249320109307583205">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="n18z.1249320109307582893" resolveInfo="getMeasurementUnit" />
                               </node>
                             </node>
                           </node>
