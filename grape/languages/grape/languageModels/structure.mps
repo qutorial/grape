@@ -148,6 +148,10 @@
       <property name="name" nameId="tpck.1169194664001" value="ConditionTimeExpression" />
       <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     </node>
+    <node type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1249320109307556893">
+      <property name="virtualPackage" nameId="tpck.1193676396447" value="Rule" />
+      <property name="name" nameId="tpck.1169194664001" value="IDeviceReference" />
+    </node>
   </roots>
   <root id="7405209520398016721">
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2210880556468720076">
@@ -349,6 +353,10 @@
       <property name="name" nameId="tpck.1169194664001" value="devName" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1249320109307561898">
+      <property name="name" nameId="tpck.1169194664001" value="devId" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1249320109307524387">
       <property name="name" nameId="tpck.1169194664001" value="isBoolean" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -358,6 +366,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3049505915474251667">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3049505915474251636" resolveInfo="ICacheHaving" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1249320109307556897">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1249320109307556893" resolveInfo="IDeviceReference" />
     </node>
   </root>
   <root id="7154405435091226010">
@@ -398,6 +409,10 @@
       <property name="name" nameId="tpck.1169194664001" value="devName" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1249320109307561799">
+      <property name="name" nameId="tpck.1169194664001" value="devId" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1249320109307525155">
       <property name="name" nameId="tpck.1169194664001" value="isBoolean" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -407,6 +422,9 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3049505915474251659">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3049505915474251636" resolveInfo="ICacheHaving" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1249320109307556895">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1249320109307556893" resolveInfo="IDeviceReference" />
     </node>
   </root>
   <root id="2210880556468709571">
@@ -474,5 +492,6 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
   </root>
+  <root id="1249320109307556893" />
 </model>
 

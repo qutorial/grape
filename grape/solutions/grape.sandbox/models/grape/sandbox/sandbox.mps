@@ -58,6 +58,9 @@
               </node>
             </node>
           </node>
+          <node role="timeExrpession" roleId="azm4.8990124198714155846" type="azm4.ConditionTimeExpression" typeId="azm4.8990124198714155834" id="1249320109307556399">
+            <property name="time" nameId="azm4.8990124198714218114" value="5" />
+          </node>
         </node>
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="8990124198714155788">
           <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="8243259794780856899" resolveInfo="AirConditioner" />
