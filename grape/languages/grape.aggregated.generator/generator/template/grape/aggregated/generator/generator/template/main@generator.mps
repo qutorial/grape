@@ -1023,12 +1023,12 @@
                     <node role="sourceNodesQuery" roleId="tpf8.1168278589236" type="tpf8.SourceSubstituteMacro_SourceNodesQuery" typeId="tpf8.1167951910403" id="8990124198714233896">
                       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8990124198714233897">
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8990124198714233898">
-                          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="8990124198714233901">
-                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4wsc.8990124198714211971" resolveInfo="getTranslationForConditionWithTimeExpression" />
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="1249320109307580507">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="4wsc.1249320109307579343" resolveInfo="getTranslationForConditionWithTimeExpression" />
                             <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="4wsc.8990124198714199922" resolveInfo="DroolsGeneratorHelper" />
-                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8990124198714237648">
-                              <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="8990124198714233902" />
-                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="8990124198714237657">
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1249320109307580508">
+                              <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="1249320109307580509" />
+                              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="1249320109307580510">
                                 <link role="link" roleId="tp25.1138056516764" targetNodeId="azm4.2269534811313078935" />
                               </node>
                             </node>
