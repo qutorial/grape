@@ -349,6 +349,10 @@
       <property name="name" nameId="tpck.1169194664001" value="devName" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1249320109307524387">
+      <property name="name" nameId="tpck.1169194664001" value="isBoolean" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4278550933587736336">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.4278550933587695099" resolveInfo="IPrintableExpression" />
     </node>
@@ -393,6 +397,10 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2210880556468579966">
       <property name="name" nameId="tpck.1169194664001" value="devName" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1249320109307525155">
+      <property name="name" nameId="tpck.1169194664001" value="isBoolean" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4278550933587736335">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1eu.4278550933587695099" resolveInfo="IPrintableExpression" />
