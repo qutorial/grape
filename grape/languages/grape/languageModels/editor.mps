@@ -88,6 +88,9 @@
       <property name="virtualPackage" nameId="tpck.1193676396447" value="Rule" />
       <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="azm4.8990124198714155834" resolveInfo="ConditionTimeExpression" />
     </node>
+    <node type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="3800184278828472900">
+      <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="azm4.3800184278828472898" resolveInfo="SMGLocation" />
+    </node>
   </roots>
   <root id="622052415736837716">
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_ConceptProperty" typeId="tpc2.1137553248617" id="622052415736891751">
@@ -412,6 +415,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="3800184278828554464">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="azm4.3800184278828472897" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2210880556468720078">
         <property name="text" nameId="tpc2.1073389577007" value="Parameters:" />
@@ -825,6 +831,17 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8990124198714155840" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8990124198714155845">
         <property name="text" nameId="tpc2.1073389577007" value="sec" />
+      </node>
+    </node>
+  </root>
+  <root id="3800184278828472900">
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3800184278828472902">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="3800184278828472905">
+        <property name="text" nameId="tpc2.1073389577007" value="Location/IP address:" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="3800184278828472904" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="3800184278828472907">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="azm4.3800184278828472899" resolveInfo="address" />
       </node>
     </node>
   </root>
