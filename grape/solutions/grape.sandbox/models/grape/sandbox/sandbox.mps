@@ -69,6 +69,9 @@
         </node>
       </node>
     </node>
+    <node role="location" roleId="azm4.3800184278828472897" type="azm4.SMGLocation" typeId="azm4.3800184278828472898" id="3800184278828619402">
+      <property name="address" nameId="azm4.3800184278828472899" value="127.0.0.1" />
+    </node>
   </root>
 </model>
 
