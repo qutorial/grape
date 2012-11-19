@@ -641,7 +641,7 @@
                         </node>
                       </node>
                       <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8990124198714217636">
-                        <property name="value" nameId="tpee.1070475926801" value="\&quot;, " />
+                        <property name="value" nameId="tpee.1070475926801" value="\&quot; " />
                       </node>
                     </node>
                   </node>
@@ -711,7 +711,7 @@
                     <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="8990124198714211984" resolveInfo="stringToXmlText" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8990124198714218219">
                       <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8990124198714218222">
-                        <property name="value" nameId="tpee.1070475926801" value="s).my" />
+                        <property name="value" nameId="tpee.1070475926801" value="s), my" />
                       </node>
                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="8990124198714218141">
                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8990124198714217978">

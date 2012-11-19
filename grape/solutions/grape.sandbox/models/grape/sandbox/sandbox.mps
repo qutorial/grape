@@ -38,29 +38,23 @@
       <node role="rules" roleId="azm4.622052415736918573" type="azm4.Rule" typeId="azm4.622052415736918524" id="1249320109307634295">
         <property name="name" nameId="tpck.1169194664001" value="NoOne" />
         <property name="description" nameId="azm4.1731331358108186318" value="For the false occupancy" />
-        <node role="conditions" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="1249320109307634299">
-          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="1249320109307634302">
-            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="1249320109307634301">
-              <property name="devName" nameId="azm4.7154405435091252569" value="Occupancy" />
-              <property name="isBoolean" nameId="azm4.1249320109307524387" value="true" />
-              <property name="devId" nameId="azm4.1249320109307561898" value="123123123132" />
-              <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="8243259794780856898" resolveInfo="Occupancy" />
+        <node role="conditions" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="3357670227976821807">
+          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="3357670227976821810">
+            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="3357670227976821809">
+              <property name="devName" nameId="azm4.7154405435091252569" value="Temperature" />
+              <property name="isBoolean" nameId="azm4.1249320109307524387" value="false" />
+              <property name="devId" nameId="azm4.1249320109307561898" value="34325435" />
+              <property name="measurementUnit" nameId="azm4.1249320109307582900" value="SIUnitType.CELSIUS" />
+              <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="8243259794780856901" resolveInfo="Temperature" />
             </node>
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="1249320109307634305" />
+            <node role="right" roleId="mj1l.8860443239512128065" type="azm4.ParameterReference" typeId="azm4.2210880556468719829" id="3357670227976821813">
+              <property name="definitionName" nameId="azm4.218407636950682724" value="ComfortTemperature" />
+              <property name="valueString" nameId="azm4.218407636950875162" value="24" />
+              <link role="definition" roleId="azm4.2210880556468719830" targetNodeId="8243259794780856893" resolveInfo="ComfortTemperature" />
+            </node>
           </node>
-          <node role="timeExrpession" roleId="azm4.8990124198714155846" type="azm4.ConditionTimeExpression" typeId="azm4.8990124198714155834" id="1249320109307634571">
+          <node role="timeExrpession" roleId="azm4.8990124198714155846" type="azm4.ConditionTimeExpression" typeId="azm4.8990124198714155834" id="3357670227976821814">
             <property name="time" nameId="azm4.8990124198714218114" value="120" />
-          </node>
-        </node>
-        <node role="conditions" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="8197262165771911044">
-          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.EqualsExpression" typeId="mj1l.8860443239512129322" id="8197262165771911048">
-            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="8197262165771911051" />
-            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="8197262165771911047">
-              <property name="devName" nameId="azm4.7154405435091252569" value="Occupancy" />
-              <property name="isBoolean" nameId="azm4.1249320109307524387" value="true" />
-              <property name="devId" nameId="azm4.1249320109307561898" value="123123123132" />
-              <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="8243259794780856898" resolveInfo="Occupancy" />
-            </node>
           </node>
         </node>
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="1249320109307634297">
@@ -70,7 +64,7 @@
       </node>
     </node>
     <node role="location" roleId="azm4.3800184278828472897" type="azm4.SMGLocation" typeId="azm4.3800184278828472898" id="3800184278828619402">
-      <property name="address" nameId="azm4.3800184278828472899" value="127.0.0.1" />
+      <property name="address" nameId="azm4.3800184278828472899" value="localhost" />
     </node>
   </root>
 </model>
