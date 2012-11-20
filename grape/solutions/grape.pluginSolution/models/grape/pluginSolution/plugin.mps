@@ -1338,7 +1338,7 @@
       </node>
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="5957829160396177912">
-      <property name="path" nameId="1oap.8974276187400029899" value="/home/zaur/Documents/Fortiss/GitHubGrape/grape/languages/grape/resources/icon16.png" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${org.fortiss.grape}/languages/grape/resources/icon16.png" />
     </node>
   </root>
   <root id="4832836059417072917">
@@ -2682,7 +2682,7 @@
       </node>
     </node>
     <node role="icon" roleId="tp4k.8976425910813834639" type="1oap.IconResource" typeId="1oap.8974276187400029883" id="3800184278828687184">
-      <property name="path" nameId="1oap.8974276187400029899" value="/home/zaur/Documents/Fortiss/GitHubGrape/grape/languages/grape/resources/iconExport.png" />
+      <property name="path" nameId="1oap.8974276187400029899" value="${org.fortiss.grape}/languages/grape/resources/iconExport.png" />
     </node>
   </root>
   <root id="7756081124180230478">
