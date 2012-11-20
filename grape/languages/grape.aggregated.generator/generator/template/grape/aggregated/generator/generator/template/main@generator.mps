@@ -792,7 +792,7 @@
                               <property name="name" nameId="tpck.1169194664001" value="str" />
                               <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="3357670227976979612" />
                               <node role="initializer" roleId="tpee.1068431790190" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3357670227976979614">
-                                <property name="value" nameId="tpee.1070475926801" value="logger.debug(\&quot; GRAPE     Rule triggered " />
+                                <property name="value" nameId="tpee.1070475926801" value="logger.debug(\&quot;GRAPE :: Rule triggered " />
                               </node>
                             </node>
                           </node>
