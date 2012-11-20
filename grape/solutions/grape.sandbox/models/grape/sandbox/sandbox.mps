@@ -60,8 +60,26 @@
               <link role="definition" roleId="azm4.2210880556468719830" targetNodeId="8243259794780856893" resolveInfo="ComfortTemperature" />
             </node>
           </node>
-          <node role="timeExrpession" roleId="azm4.8990124198714155846" type="azm4.ConditionTimeExpression" typeId="azm4.8990124198714155834" id="3357670227976821814">
-            <property name="time" nameId="azm4.8990124198714218114" value="120" />
+        </node>
+        <node role="conditions" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="6678593346514603606">
+          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.LessExpression" typeId="mj1l.8860443239512147449" id="6678593346514603609">
+            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="6678593346514603608">
+              <property name="devName" nameId="azm4.7154405435091252569" value="Temperature" />
+              <property name="isBoolean" nameId="azm4.1249320109307524387" value="false" />
+              <property name="devId" nameId="azm4.1249320109307561898" value="34325435" />
+              <property name="measurementUnit" nameId="azm4.1249320109307582900" value="SIUnitType.CELSIUS" />
+              <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="8243259794780856901" resolveInfo="Temperature" />
+            </node>
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.PlusExpression" typeId="mj1l.5763383285156373013" id="6678593346514603613">
+              <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6678593346514603616">
+                <property name="value" nameId="mj1l.8860443239512128104" value="10" />
+              </node>
+              <node role="left" roleId="mj1l.8860443239512128064" type="azm4.ParameterReference" typeId="azm4.2210880556468719829" id="6678593346514603612">
+                <property name="definitionName" nameId="azm4.218407636950682724" value="ComfortTemperature" />
+                <property name="valueString" nameId="azm4.218407636950875162" value="24" />
+                <link role="definition" roleId="azm4.2210880556468719830" targetNodeId="8243259794780856893" resolveInfo="ComfortTemperature" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="1249320109307634297">
