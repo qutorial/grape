@@ -20,6 +20,13 @@
     </node>
     <node role="rooms" roleId="azm4.7405209520398027059" type="azm4.Room" typeId="azm4.7405209520398027057" id="8243259794780856895">
       <property name="name" nameId="tpck.1169194664001" value="Office225" />
+      <node role="actuators" roleId="azm4.622052415736893206" type="azm4.NumericalActuator" typeId="azm4.622052415736893133" id="5498625891650723186">
+        <property name="name" nameId="tpck.1169194664001" value="Blinds" />
+        <property name="minValue" nameId="azm4.622052415736891758" value="0" />
+        <property name="maxValue" nameId="azm4.622052415736891759" value="100" />
+        <property name="id" nameId="azm4.7405209520398059588" value="blindsid" />
+        <node role="measurementUnit" roleId="azm4.622052415736891760" type="azm4.MUProcent" typeId="azm4.622052415736869233" id="5498625891650723188" />
+      </node>
       <node role="sensors" roleId="azm4.622052415736893205" type="azm4.BooleanSensor" typeId="azm4.622052415736893045" id="8243259794780856898">
         <property name="name" nameId="tpck.1169194664001" value="Occupancy" />
         <property name="id" nameId="azm4.7405209520398059588" value="123123123132" />
@@ -60,6 +67,12 @@
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="1249320109307634297">
           <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="8243259794780856899" resolveInfo="AirConditioner" />
           <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="1249320109307634306" />
+        </node>
+        <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="5498625891650723189">
+          <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="5498625891650723186" resolveInfo="Blinds" />
+          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="5498625891650723191">
+            <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+          </node>
         </node>
       </node>
     </node>

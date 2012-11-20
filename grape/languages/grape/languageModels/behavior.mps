@@ -2005,11 +2005,11 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="3711645749053662962">
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3711645749053662963">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="3711645749053666835">
-              <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3711645749053750883">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="vyt2.~SimpleRoleScope%dforNamedElements(jetbrains%dmps%dsmodel%dSNode,jetbrains%dmps%dsmodel%dSNode)%cjetbrains%dmps%dscope%dSimpleRoleScope" resolveInfo="forNamedElements" />
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="vyt2.~SimpleRoleScope" resolveInfo="SimpleRoleScope" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3711645749053750884" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="3711645749053750885">
+              <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6678593346514576404">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o8zo.3587601930838053774" resolveInfo="forNamedElements" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="o8zo.8401916545537277014" resolveInfo="SimpleRoleScope" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="6678593346514576405" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="6678593346514576406">
                   <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="azm4.7405209520398027057" resolveInfo="Room" />
                   <link role="linkDeclaration" roleId="tp25.1226359192215" targetNodeId="azm4.622052415736893205" />
                 </node>
@@ -2030,11 +2030,11 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="3711645749053724916">
           <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="3711645749053724917">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="3711645749053724918">
-              <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="3711645749053724919">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="vyt2.~SimpleRoleScope%dforNamedElements(jetbrains%dmps%dsmodel%dSNode,jetbrains%dmps%dsmodel%dSNode)%cjetbrains%dmps%dscope%dSimpleRoleScope" resolveInfo="forNamedElements" />
-                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="vyt2.~SimpleRoleScope" resolveInfo="SimpleRoleScope" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="3711645749053724920" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="3711645749053724921">
+              <node role="expression" roleId="tpee.1068581517676" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="6678593346514576410">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o8zo.3587601930838053774" resolveInfo="forNamedElements" />
+                <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="o8zo.8401916545537277014" resolveInfo="SimpleRoleScope" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="1i04.ThisNodeExpression" typeId="1i04.1225194691553" id="6678593346514576411" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="6678593346514576412">
                   <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="azm4.7405209520398027057" resolveInfo="Room" />
                   <link role="linkDeclaration" roleId="tp25.1226359192215" targetNodeId="azm4.622052415736893206" />
                 </node>
