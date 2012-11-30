@@ -82,6 +82,20 @@
             </node>
           </node>
         </node>
+        <node role="conditions" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="6649579316037000882">
+          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.NotEqualsExpression" typeId="mj1l.7615572890648529894" id="6649579316037000885">
+            <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.NumberLiteral" typeId="mj1l.8860443239512128103" id="6649579316037000888">
+              <property name="value" nameId="mj1l.8860443239512128104" value="0" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.ActuatorReference" typeId="azm4.2210880556468579964" id="6649579316037000884">
+              <property name="devName" nameId="azm4.2210880556468579966" value="Blinds" />
+              <property name="isBoolean" nameId="azm4.1249320109307525155" value="false" />
+              <property name="devId" nameId="azm4.1249320109307561799" value="blindsid" />
+              <property name="measurementUnit" nameId="azm4.1249320109307582898" value="SIUnitType.PERCENT" />
+              <link role="deviceBase" roleId="azm4.2210880556468579965" targetNodeId="5498625891650723186" resolveInfo="Blinds" />
+            </node>
+          </node>
+        </node>
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="1249320109307634297">
           <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="8243259794780856899" resolveInfo="AirConditioner" />
           <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="153338794483800239">
