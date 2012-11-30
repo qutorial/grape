@@ -105,10 +105,6 @@
             <property name="value" nameId="mj1l.8860443239512128104" value="0" />
           </node>
         </node>
-        <node role="cronExpression" roleId="azm4.6649579316036900736" type="azm4.CronExpression" typeId="azm4.6649579316036900719" id="6649579316036985707">
-          <property name="repeat" nameId="azm4.6649579316036900720" value="5" />
-          <property name="start" nameId="azm4.6649579316036900721" value="2" />
-        </node>
       </node>
     </node>
     <node role="location" roleId="azm4.3800184278828472897" type="azm4.SMGLocation" typeId="azm4.3800184278828472898" id="3800184278828619402">
