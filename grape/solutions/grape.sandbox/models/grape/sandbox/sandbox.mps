@@ -84,7 +84,20 @@
         </node>
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="1249320109307634297">
           <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="8243259794780856899" resolveInfo="AirConditioner" />
-          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="1249320109307634306" />
+          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.GreaterExpression" typeId="mj1l.8860443239512147445" id="153338794483800239">
+            <node role="right" roleId="mj1l.8860443239512128065" type="azm4.ParameterReference" typeId="azm4.2210880556468719829" id="153338794483800242">
+              <property name="definitionName" nameId="azm4.218407636950682724" value="ComfortTemperature" />
+              <property name="valueString" nameId="azm4.218407636950875162" value="24" />
+              <link role="definition" roleId="azm4.2210880556468719830" targetNodeId="8243259794780856893" resolveInfo="ComfortTemperature" />
+            </node>
+            <node role="left" roleId="mj1l.8860443239512128064" type="azm4.SensorReference" typeId="azm4.622052415736918537" id="153338794483800234">
+              <property name="devName" nameId="azm4.7154405435091252569" value="Temperature" />
+              <property name="isBoolean" nameId="azm4.1249320109307524387" value="false" />
+              <property name="devId" nameId="azm4.1249320109307561898" value="34325435" />
+              <property name="measurementUnit" nameId="azm4.1249320109307582900" value="SIUnitType.CELSIUS" />
+              <link role="deviceBase" roleId="azm4.622052415736918538" targetNodeId="8243259794780856901" resolveInfo="Temperature" />
+            </node>
+          </node>
         </node>
         <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="5498625891650723189">
           <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="5498625891650723186" resolveInfo="Blinds" />
