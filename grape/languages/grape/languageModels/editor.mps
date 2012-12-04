@@ -891,8 +891,8 @@
         <property name="text" nameId="tpc2.1073389577007" value="s starting from" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="6649579316036900726" />
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="6649579316036900733">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="azm4.6649579316036900721" resolveInfo="start" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4735825344288887874">
+        <property name="text" nameId="tpc2.1073389577007" value="0" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6649579316036900735">
         <property name="text" nameId="tpc2.1073389577007" value="s" />
