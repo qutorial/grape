@@ -107,6 +107,19 @@
           </node>
         </node>
       </node>
+      <node role="rules" roleId="azm4.622052415736918573" type="azm4.Rule" typeId="azm4.622052415736918524" id="7641401768813853000">
+        <property name="name" nameId="tpck.1169194664001" value="True" />
+        <node role="conditions" roleId="azm4.2269534811313078935" type="azm4.Condition" typeId="azm4.7154405435091241893" id="7641401768813853001">
+          <node role="expression" roleId="azm4.7154405435091241894" type="mj1l.TrueLiteral" typeId="mj1l.8860443239512128094" id="7641401768813853005" />
+        </node>
+        <node role="consequences" roleId="azm4.7154405435091226028" type="azm4.Consequence" typeId="azm4.7154405435091226010" id="7641401768813853003">
+          <link role="actuatorBase" roleId="azm4.7154405435091226011" targetNodeId="8243259794780856899" resolveInfo="AirConditioner" />
+          <node role="expression" roleId="azm4.7154405435091226012" type="mj1l.FalseLiteral" typeId="mj1l.8860443239512128099" id="7641401768813853006" />
+        </node>
+        <node role="cronExpression" roleId="azm4.6649579316036900736" type="azm4.CronExpression" typeId="azm4.6649579316036900719" id="7641401768813853007">
+          <property name="repeat" nameId="azm4.6649579316036900720" value="5" />
+        </node>
+      </node>
     </node>
     <node role="location" roleId="azm4.3800184278828472897" type="azm4.SMGLocation" typeId="azm4.3800184278828472898" id="3800184278828619402">
       <property name="address" nameId="azm4.3800184278828472899" value="localhost" />
